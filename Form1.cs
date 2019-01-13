@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -124,7 +124,7 @@ namespace WindowsFormsApp1
             //使pictureBox1~pictureBox8顯示1~4.png四個圖示
             for (int i = 1; i <= n.GetUpperBound(0); i++)
             {
-                pic[i].Tag = n[i];
+                
                 pic[i].Image = new Bitmap(Convert.ToString(n[i]) + ".png");
             }
         }
@@ -147,7 +147,7 @@ namespace WindowsFormsApp1
                 pic[i].Enabled = true;//pictureBox1~pictureBox8圖片啟用
 
             }
-            if (timer1Tot == 10) //timer1Tot遊戲時間到30時，即執行下面敘述馬上停止遊戲
+            if (timer1Tot == 20) //timer1Tot遊戲時間到20時，即執行下面敘述馬上停止遊戲
                 {
                     timer1.Enabled = false;//timer1計時器停止
 
